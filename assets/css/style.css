@@ -1,0 +1,46 @@
+:root {
+  --colbg: lightgrey;
+  --colfont: darkblue;
+  --colheadbg: #13293d;
+  --colhead:#b9c6ae;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer {
+  background-color: var(--colheadbg);
+  color: var(--colhead);
+}
+
+h1 {font-size: 250%;}
+
+h2 {font-size: 200%;}
+
+nav ul li {display: inline;}
+
+@media screen and (min-width: 768px) {
+  header {
+    /* test to see if resize working */
+    background-color: lightblue;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+/* test to see if resize working */
+    background-color: green;
+
+  }
+}
