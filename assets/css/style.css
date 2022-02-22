@@ -20,7 +20,7 @@ h2 {font-size: 200%;}
 
 h3 {font-size: 175%;}
 
-h4 {font-size: 150%;}
+h4 {font-size: 125%;}
 
 p {font-size: 100%;}
 
@@ -118,7 +118,10 @@ main section h2 {
   border: 3px solid blue;  /* TODO used for initial layout work */
   position: absolute;
   top: 50%;
-  height: 25%;
+  height: auto;
+  max-height: 50%;
+  max-width: 30%;
+  font-size: 75%;
   padding: 2%;
   background-color: var(--colbg);
   /* align-items: center;
@@ -126,14 +129,14 @@ main section h2 {
   padding: auto; */
 }
 
-.details {
+/* .details {
   position: absolute;
   top: 75%;
   height: 10%;
   max-height: 10%;
   padding: 2%;
   background-color: var(--colbg);
-}
+} */
 
 .projpic {
   border: 3px solid black;  /* TODO used for initial layout work */
@@ -150,14 +153,14 @@ main section h2 {
 } 
 
 /* using figcaption for title of card */
-.cardtt {
+/* .cardtt {
   position: absolute;
   top: 30%;
   visibility: visible;
   margin: 0;
   padding: 0;
   background-color: var(--colbg);
-}
+} */
 
 #aboutme {
   border: 5px solid darkblue;  /* TODO used for initial layout work */
