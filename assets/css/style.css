@@ -129,14 +129,14 @@ main section h2 {
   padding: auto; */
 }
 
-/* .details {
+.details {
   position: absolute;
   top: 75%;
   height: 10%;
   max-height: 10%;
   padding: 2%;
   background-color: var(--colbg);
-} */
+}
 
 .projpic {
   border: 3px solid black;  /* TODO used for initial layout work */
@@ -153,14 +153,14 @@ main section h2 {
 } 
 
 /* using figcaption for title of card */
-/* .cardtt {
+ .cardtt {
   position: absolute;
   top: 30%;
   visibility: visible;
   margin: 0;
   padding: 0;
   background-color: var(--colbg);
-} */
+}
 
 #aboutme {
   border: 5px solid darkblue;  /* TODO used for initial layout work */
