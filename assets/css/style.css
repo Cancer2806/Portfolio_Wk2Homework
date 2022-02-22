@@ -1,139 +1,166 @@
+/* TODO colors and font sizes / types to be sorted once sheet is functional */
+/* TODO remove or finalise borders used for initial layout */
 :root {
   --colbg: lightgrey;
   --colfont: darkblue;
   --colheadbg: lightgrey;
   --colhead:#b9c6ae;
+  --initfontsz: 16px;
 }
 
 body {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: var(--initfontsz);
 }
 
-header {
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 5px solid black;
-  text-align: center;
-  height: 100px;
-  width: 100%;
-  z-index: 9;
-}
+h1 {font-size: 250%;}
 
-header img {
-  position: absolute;
-  text-align: flex-start;
-  left: 5px;
-  width: 20%;
-  height: auto;
-  max-height: 100%;
-  border: 1px solid black;
+h2 {font-size: 200%;}
 
-}
+h3 {font-size: 175%;}
+
+h4 {font-size: 150%;}
+
+p {font-size: 100%;}
 
 header, footer {
   background-color: var(--colheadbg);
   color: var(--colhead);
+  border: 5px solid black;  /* TODO used for initial layout work */
 }
 
-footer {border: 5px solid green;}
+/* Fixed at top of page, complete with nav bar and profile image */
+header {
+  position: sticky;
+  top: 0;
+  text-align: right;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5px solid black;  /* TODO used for initial layout work */
+  z-index: 9;
+}
+/* Profile Pic */
+header img {
+  position: absolute;
+  text-align: flex-start;
+  left: 5px;
+  width: 25%;
+  height: auto;
+  max-height: 100%;
+  border: 1px solid black;  /* TODO used for initial layout work */
+}
 
-h1 {font-size: 2.5rem;}
-
-h2 {font-size: 2rem;}
-
+/* nav bar */
 nav {
-  border: 5px solid blue;
-  margin 0 auto;
-}
+  border: 5px solid blue;  /* TODO used for initial layout work */
+} 
 
 nav ul li {
   display: inline;
   font-size: 0.9rem;
 }
 
+/* to get rid of the lines under the nav bar items - is there a better way? */
 nav [href*='#'] {
   color: white;
   text-decoration: none;
 }
 
-:target::before {
-  content: "";
-  display: block;
-  height: 150px; /* fixed header height */
-  margin: -150px 0 0; /* negative fixed header height */
-}
-
-main .section {
+/* Ensures anchor elements land below fixed header */
+main section {
   margin: 0;
-  scroll-margin-top: 100rem;
+  scroll-margin-top: 100px;
 } 
 
-main .section h2 {
+main section h2 {
   text-align: center;
 }
 
   /* hero image */
 .hero {
     position: relative;
-    border: 3px dotted green;
-    height: 100px;
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 25px;
+    border: 3px dotted green;  /* TODO used for initial layout work */
+    width: auto;
+    height: auto;
+    min-height: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
-   
+    background-repeat: no-repeat;
 }
 
 .hero h2 {
   position: absolute;
   right: 0;
   bottom: 10px;
-  background-color: beige;
+  background-color: rgba(245, 245, 220, 0.75);
   color: blue;
 }
 
-.projects {border: 3px solid yellow;}
-
+.projects {
+  border: 3px solid yellow;  /* TODO used for initial layout work */
+  display: flex;
+  flex-direction: column;
+}
 .projcard {
-  border: 3px solid red;
+  border: 3px solid red;  /* TODO used for initial layout work */
   position: relative;
   width: 100%;
 }
 
 .cardtitle {
-  border: 3px solid blue;
+  border: 3px solid blue;  /* TODO used for initial layout work */
   position: absolute;
-  align-items: center;
-  margin: 30px auto;
-  padding: auto;
+  top: 50%;
+  height: 25%;
+  padding: 2%;
+  background-color: var(--colbg);
+  /* align-items: center;
+  margin: 30% auto;
+  padding: auto; */
+}
+
+.details {
+  position: absolute;
+  top: 75%;
+  height: 10%;
+  max-height: 10%;
+  padding: 2%;
+  background-color: var(--colbg);
 }
 
 .projpic {
-  border: 3px solid black;
+  border: 3px solid black;  /* TODO used for initial layout work */
   width: 100%;
-  height: auto;
+  height: 200px;
   max-height: 200px;
   padding: 15px;
 }
 
 .projcard img {
   width: 100%;
-  height: 180px;
-  padding: 15px;
+  height: 100%;
+  padding: 0px;
 } 
 
- 
+/* using figcaption for title of card */
+.cardtt {
+  position: absolute;
+  top: 30%;
+  visibility: visible;
+  margin: 0;
+  padding: 0;
+  background-color: var(--colbg);
+}
 
 #aboutme {
-  border: 5px solid darkblue;
+  border: 5px solid darkblue;  /* TODO used for initial layout work */
 }
 
 #contact ul li {
@@ -141,11 +168,11 @@ main .section h2 {
   font-size: 1rem;
 }
 
-#work {border: 5px solid green;}
+#work {border: 5px solid green;}  /* TODO used for initial layout work */
 
-#contact {border: 5px solid blue;}
+#contact {border: 5px solid blue;}  /* TODO used for initial layout work */
 
-#aboutme {border: 5px solid darkblue;}
+#aboutme {border: 5px solid darkblue;}  /* TODO used for initial layout work */
 
 /* Screen size greater than 768px targeting tablets */
 @media screen and (min-width: 768px) {
@@ -170,13 +197,14 @@ main .section h2 {
     
   }
 
-.projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-}
-.projcard {
-  min-width: 400px;
-}
+  }
+  .projcard {
+    min-width: 200px;
+    max-width: 50%;
+  }
 }

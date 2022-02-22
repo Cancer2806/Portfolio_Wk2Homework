@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>
+  <header> <!-- Title Header and Navigation bar (stays top of page) -->
     <h1>Frank Lavery</h1>
     <img src="./assets/images/image-1.png" alt="Owner's Profile Picture">
     <nav>
@@ -29,42 +29,46 @@
   <main>
     <section id="aboutme">
       <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nisi, saepe quas sint consequuntur esse voluptatum, dolores dolor aspernatur neque laborum dolorum dolorem repudiandae. Dignissimos eveniet sequi corporis tempore ullam!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
     </section> <!-- About Me -->
 
     <section id="work">
       <h2>Work</h2>
       <!-- TODO cards with photos and links to applications.  First image double size of others -->
       <article class="projects">
-        <div class="projcard">
-          <h3 class="cardtitle">Name of Project</h3>
-          <p>Project Details </p>
+        <article class="projcard">
+          <h3 class="cardtitle">Name of Project 1</h3>
+          <p class="details">Project Details 1</p>
+          <figure class="projpic">
+            <a href="https://tinypng.com/" target="blank">
+            <img src="./assets/images/image-1.png" alt="screenshot of project" title="Project Name" >
+            </a>
+            <figcaption class="cardtt">Project Name 1</figcaption>
+          </figure>
+        </article> <!-- projcard -->
+        <article class="projcard">
+          <h3 class="cardtitle">Name of Project 2</h3>
+          <p class="details">Project Details 2</p>
+          <figure class="projpic">
+            <img src="./assets/images/image-2.png" alt="screenshot of project" title="Project Name">
+            
+          </figure>
+        </article> <!-- projcard -->
+        <article class="projcard">
+          <h3 class="cardtitle">Name of Project 3</h3>
+          <p class="details">Project Details 3</p>
           <figure class="projpic">
             <img src="./assets/images/image-1.png" alt="screenshot of project" title="Project Name">
           </figure>
-        </div>
-        <div class="projcard">
-          <h3 class="cardtitle">Name of Project</h3>
-          <p>Project Details </p>
+        </article> <!-- projcard -->
+        <article class="projcard">
+          <h3 class="cardtitle">Name of Project 4</h3>
+          <p class="details">Project Details 4</p>
           <figure class="projpic">
             <img src="./assets/images/image-2.png" alt="screenshot of project" title="Project Name">
           </figure>
-        </div>
-        <div class="projcard">
-          <h3 class="cardtitle">Name of Project</h3>
-          <p>Project Details </p>
-          <figure class="projpic">
-            <img src="./assets/images/image-1.png" alt="screenshot of project" title="Project Name">
-          </figure>
-        </div>
-        <div class="projcard">
-          <h3 class="cardtitle">Name of Project</h3>
-          <p>Project Details </p>
-          <figure class="projpic">
-            <img src="./assets/images/image-2.png" alt="screenshot of project" title="Project Name">
-          </figure>
-        </div>
-      </article>
+        </article> <!-- projcard -->
+      </article> <!-- projects -->
     </section> <!-- work -->
 
     <section id="contact">
