@@ -123,6 +123,7 @@ footer {
   color: blue;
 }
 
+/* set of work cards */
 .projects {
   display: flex;
   flex-direction: row;
@@ -130,6 +131,7 @@ footer {
   justify-content: flex-start;
 }
 
+/* parameters for each card */
 .projcard {
   border: 5px solid rgb(158, 156, 156);
   position: relative;
@@ -137,11 +139,6 @@ footer {
   margin: 2px 2px;
   /* reduce image chatter when resizing */
   transition: flex-basis 500ms linear;
-}
-
-.projpic img {
-  width: 100%;
-  height: auto; 
 }
 
 .cardtitle {
@@ -153,7 +150,11 @@ footer {
   font-size: 75%;
   padding: 2%;
   background-color: var(--colbg);
-  /* text-align: center; */
+}
+
+.projpic img {
+  width: 100%;
+  height: auto; 
 }
 
 /* figcaption is included for accessibility, but not shown on screen */
@@ -181,9 +182,27 @@ footer {
   }
 
   nav ul li {
-  display: inline;
-  padding: 0 0 0 5px;
-  font-size: 1.5rem;
+    padding-right: 5px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    scroll-margin-top: 105px;
+  } 
+
+  section h2 {
+    box-sizing: border-box;
+    text-align: right;
+    min-width: 20%;
+    border-right: var(--bordersz) solid var(--colborder);
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+
+  .hero {
+    min-height: 300px;
   }
   .projcard {
     flex: 1 0 30%;
@@ -193,124 +212,53 @@ footer {
   }
 
   .cardtitle {
-  max-height: 80%;
-  max-width: 50%;
+    max-height: 80%;
+    max-width: 50%;
+  }
+/* make the first project double size on larger screens */
+  .mainproject {
+    flex: 1 0 200%;
+    min-width: 100%;
   }
 
-section {
-  display: flex;
-  flex-direction: row;
-  scroll-margin-top: 105px;
-  margin: 5px 0.5% 0.5% 0.5%;
-  padding: 0 0 10px 0;
-  border-bottom: var(--bordersz) solid var(--colborder);
-} 
+  #resume {
+    padding: 0 0 5px 0;
+  }
 
-section h2 {
-  box-sizing: border-box;
-  text-align: right;
-  color: var(--colfont);
-  min-width: 20%;
-  border-right: var(--bordersz) solid var(--colborder);
-  margin-right: 10px;
-  padding-right: 10px;
-}
-
-.hero {
-  min-height: 300px;
-}
-
-.mainproject {
-  flex: 1 0 200%;
-  min-width: 100%;
-}
-
-#resume {
-  padding: 0 0 5px 0;
-}
-
-#resume h4, p {
-  margin: auto 0;
-  padding-right: 50px;
-}
+  #resume h4, p {
+    margin: auto 0;
+    padding-right: 50px;
+  }
 }
 
 /* Screen size greater than 992px targeting computers and laptops */
 @media screen and (min-width: 992px) {
   header {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-  }
-
-  h1 {
-    font-size: 280%;
-  }
-
-  nav ul li {
-  display: inline;
-  padding: 0 0 0 25px;
-  font-size: 1.5rem;
   }
 
   /* reinstate underline on larger screens */
   nav [href*='#'] {
-  text-decoration: underline;
+    text-decoration: underline;
   }
 
-  .projcard {
-    flex: 1 0 33.3333%;
-    max-width: 50%;
+  .hero {
+    min-height: 350px;
   }
 
   .cardtitle {
     max-width: 40%;
   }
 
-section {
-  display: flex;
-  flex-direction: row;
-  scroll-margin-top: 105px;
-  margin: 5px 0.5% 0.5% 0.5%;
-  padding: 0 0 10px 0;
-  border-bottom: var(--bordersz) solid var(--colborder);
-} 
+  #contact ul {
+    margin: auto 0;
+  }
 
-section h2 {
-  box-sizing: border-box;
-  text-align: right;
-  color: var(--colfont);
-  min-width: 20%;
-  border-right: var(--bordersz) solid var(--colborder);
-  margin-right: 10px;
-  padding-right: 10px;
-}
-
-.hero {
-  min-height: 350px;
-}
-
-.mainproject {
-  flex: 2 0 200%;
-  min-width: 100%;
-}
-
-#contact ul {
-  margin: auto 0;
-}
-
-#contact ul li {
-  display: inline;
-  font-size: 120%;
-  padding: 2px 50px 0 0;
-}
-
-#resume {
-  padding: 0 0 5px 0;
-}
-
-#resume h4, p {
-  margin: auto 0;
-  padding-right: 50px;
-}
+  #contact ul li {
+    display: inline;
+    font-size: 120%;
+    padding: 2px 50px 0 0;
+  }
 }
