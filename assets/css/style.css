@@ -1,11 +1,10 @@
-/* TODO colors and font sizes / types to be sorted once sheet is functional */
 /* Universal selectors and Variable setting */
 :root {
-  --colbg: lightgrey;
-  --colfont: darkblue;
-  --colheadbg: darkgrey;
-  --colhead: blue;
-  --colborder: darkblue;
+  --colbg: rgb(211,211,211);
+  --colfont: rgb(0,0,139);
+  --colheadbg: rgb(169,169,169);
+  --colhead: rgb(0,0,255);
+  --colborder: rgb(0,0,139);
   --bordersz: 2px;
   --initfontsz: 16px;
 }
@@ -119,8 +118,8 @@ footer {
   position: absolute;
   right: 2%;
   bottom: 15%;
-  background-color: var(--colbg);
-  color: blue;
+  background-color: rgba(211,211,211,0.4);
+  color: var(--colfont);
 }
 
 /* set of work cards */

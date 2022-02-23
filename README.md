@@ -1,25 +1,28 @@
 # Portfolio_Wk2Homework
-Frank Lavery's Portfolio of Projects
+Project Portfolio
 
 ## Description
+The webpage sets out a portfolio of work for use by employers' in assessing the suitability of the owner to fill a role.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+It provides some basic information about the candidate, links and screenshots of projects that the candidate has either worked on or completed, along with contact information for the candidate, including links to Github and LinkedIn.  A section at the bottom has been provided to allow the employment history of the candidate to be added at a later stage.
 
+ The webpage uses a flexbox layout to present the projects.  The flagship project is presented in a larger format than the other projects.  At this point in time, placeholders and links to useful websites have been used pending the completion of further projects.  It is designed so that projects can be updated or additional projects added at any time within the HTML, without needing to change the CSS.
 
-## Table of Contents
+ The webpage uses media queries to respond to different size screens.
 
-## Installation
-Instructions for installation  // Filepaths for location
+ Current plans are that the owner will use the portfolio for his own purposes, making updates and improvements over the next few months, as considered appropriate.
+
 
 ## Usage
-Instructions for Use
-https://cancer2806.github.io/Portfolio_Wk2Homework/
+The webpage is located at this address:  https://cancer2806.github.io/Portfolio_Wk2Homework/
+
+CSS is contained in one file:  ./assets/css/style.css
+
+Images are all contained in a local directory:  ./assets/images/
+
 
 ## Credits
-
+Repository for the submission of Week 2's Homework in UWA's Bootcamp series
 
 
 ## License
