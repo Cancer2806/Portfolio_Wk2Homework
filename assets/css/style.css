@@ -3,8 +3,10 @@
 :root {
   --colbg: lightgrey;
   --colfont: darkblue;
-  --colheadbg: lightgrey;
-  --colhead:#b9c6ae;
+  --colheadbg: darkgrey;
+  --colhead: blue;
+  --colborder: darkblue;
+  --bordersz: 2px;
   --initfontsz: 16px;
 }
 
@@ -12,84 +14,99 @@ body {
   display: flex;
   flex-direction: column;
   font-size: var(--initfontsz);
+  background-color: var(--colbg);
 }
 
-h1 {font-size: 250%;}
+h1 {
+  font-size: 250%;
+  margin-right: 2%;
+  z-index: 8
+}
 
 h2 {font-size: 200%;}
 
 h3 {font-size: 175%;}
 
-h4 {font-size: 125%;}
+h4 {font-size: 90%;}
 
 p {font-size: 100%;}
 
 header, footer {
   background-color: var(--colheadbg);
   color: var(--colhead);
-  border: 5px solid black;  /* TODO used for initial layout work */
+}
+
+section {
+  
 }
 
 /* Fixed at top of page, complete with nav bar and profile image */
 header {
   position: sticky;
   top: 0;
+  margin: 0.5% 0.5% 0 0.5%;
   text-align: right;
   height: 100px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 5px solid black;  /* TODO used for initial layout work */
   z-index: 9;
 }
-/* Profile Pic */
+
+/* Profile Avatar */
 header img {
   position: absolute;
-  text-align: flex-start;
-  left: 5px;
-  width: 25%;
+  left: 1%;
+  width: auto;
   height: auto;
   max-height: 100%;
-  border: 1px solid black;  /* TODO used for initial layout work */
 }
 
 /* nav bar */
 nav {
-  border: 5px solid blue;  /* TODO used for initial layout work */
+  margin-right: 2%;
+  z-index: 9
 } 
 
 nav ul li {
   display: inline;
+  padding: 0 2px 2px 0
   font-size: 0.9rem;
 }
 
-/* to get rid of the lines under the nav bar items - is there a better way? */
+/* to remove the lines under the nav bar items - is there a better way? */
 nav [href*='#'] {
-  color: white;
   text-decoration: none;
 }
 
 /* Ensures anchor elements land below fixed header */
-main section {
-  margin: 0;
+section {
   scroll-margin-top: 100px;
+  margin: 5px 0.5% 0.5% 0.5%;
+  padding: 0 0 10px 0;
+  border-bottom: var(--bordersz) solid var(--colborder);
 } 
 
-main section h2 {
+section h2 {
+  text-align: center;
+  color: var(--colfont);
+}
+
+footer {
+  margin: 5px 0.5% 0.5% 0;
+  padding: 0 0 0 5px;
   text-align: center;
 }
 
   /* hero image */
 .hero {
     position: relative;
-    border: 3px dotted green;  /* TODO used for initial layout work */
-    width: auto;
+    width: 100%;
     height: auto;
     min-height: 200px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    margin: 0px 2px 2px 2px;
+    background-image: url("../images/Hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,14 +114,13 @@ main section h2 {
 
 .hero h2 {
   position: absolute;
-  right: 0;
-  bottom: 10px;
-  background-color: rgba(245, 245, 220, 0.75);
+  right: 2%;
+  bottom: 15%;
+  background-color: var(--colbg);
   color: blue;
 }
 
 .projects {
-  border: 3px solid yellow;  /* TODO used for initial layout work */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -112,34 +128,29 @@ main section h2 {
 }
 
 .projcard {
-  border: 3px solid red;
+  border: 5px solid rgb(158, 156, 156);
   position: relative;
   flex: 1 0 100%;
+  margin: 2px 2px;
   /* reduce image chatter when resizing */
   transition: flex-basis 500ms linear;
-  /* height: 25vh; */
 }
 
 .projpic img {
-  border: 3px solid blue;
   width: 100%;
-  height: 35vh; 
-  /* padding: 0; */
+  height: auto; 
 }
 
 .cardtitle {
-  border: 3px solid blue; 
   position: absolute;
-  top: 50%;
+  top: 20%;
   height: auto;
   max-height: 50%;
   max-width: 50%;
   font-size: 75%;
   padding: 2%;
   background-color: var(--colbg);
-  /* align-items: center;
-  margin: 30% auto;
-  padding: auto; */
+  /* text-align: center; */
 }
 
 /* figcaption is included for accessibility, but not shown on screen */
@@ -148,20 +159,16 @@ main section h2 {
   visibility: hidden;
 }
 
-#aboutme {
-  border: 5px solid darkblue;  /* TODO used for initial layout work */
-}
-
 #contact ul li {
-  display: inline;
-  font-size: 1rem;
+  font-size: 100%;
+  padding: 2px 0;
 }
 
-#work {border: 5px solid green;}  /* TODO used for initial layout work */
-
-#contact {border: 5px solid blue;}  /* TODO used for initial layout work */
-
-#aboutme {border: 5px solid darkblue;}  /* TODO used for initial layout work */
+#resume {
+  font-size: .65rem;
+  text-align: center;
+  padding: 10px;
+}
 
 /* Screen size greater than 768px targeting tablets */
 @media screen and (min-width: 768px) {
