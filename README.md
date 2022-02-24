@@ -16,6 +16,9 @@ It provides some basic information about the candidate, links and screenshots of
 ## Usage
 The webpage is located at this address:  https://cancer2806.github.io/Portfolio_Wk2Homework/
 
+A screenshot of the webpage is provided below:
+![Application Screenshot](./assets/images/PortfolioScreenshot.png)
+
 CSS is contained in one file:  ./assets/css/style.css
 
 Images are all contained in a local directory:  ./assets/images/
