@@ -1,5 +1,5 @@
 # Project Portfolio
-Project Portfolio
+Portfolio of a candidate employee's project work.
 
 ## Description
 The webpage sets out a portfolio of work for use by employers' in assessing the suitability of the owner to fill a role.
