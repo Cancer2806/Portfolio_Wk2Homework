@@ -14,7 +14,7 @@ It provides some basic information about the candidate, links and screenshots of
 
 
 ## Usage
-The webpage is located at this address:  https://cancer2806.github.io/Portfolio_Wk2Homework/
+The webpage is located at this address:  https://cancer2806.github.io/Project-Portfolio/
 
 A screenshot of the webpage is provided below:
 ![Application Screenshot](./assets/images/PortfolioScreenshot.png)
