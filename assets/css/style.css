@@ -160,8 +160,7 @@ footer {
 
 /* Profile Avatar */
 #aboutme img {
-  display: inline;
-  width: 15%;
+  width: 10%;
   height: auto;
   max-height: 100%;
   padding-right: 10px;
