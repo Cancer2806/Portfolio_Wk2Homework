@@ -50,15 +50,6 @@ header {
   z-index: 9;
 }
 
-/* Profile Avatar */
-header img {
-  position: absolute;
-  left: 1%;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-}
-
 /* nav bar */
 nav {
   margin-right: 2%;
@@ -68,7 +59,7 @@ nav {
 nav ul li {
   display: inline;
   padding: 0 2px 2px 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 nav ul li:hover,
@@ -76,7 +67,7 @@ nav ul li:focus {
   text-decoration: underline;
 }
 
-/* to remove the lines under the nav bar items - is there a better way? */
+/* to remove the lines under the nav bar items */
 nav [href*='#'] {
   text-decoration: none;
 }
@@ -163,6 +154,19 @@ footer {
 }
 
 /* ID selectors */
+#container {
+  display: flex;
+}
+
+/* Profile Avatar */
+#aboutme img {
+  display: inline;
+  width: 15%;
+  height: auto;
+  max-height: 100%;
+  padding-right: 10px;
+}
+
 #contact ul li {
   font-size: 100%;
   padding: 2px 0;
